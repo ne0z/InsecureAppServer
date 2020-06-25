@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  app_1:  
+    build: ./webserver
+    ports:
+    - "31335:6789"
+
+  app_2:  
+    build: ./ftpserver
+    ports:
+    - "31336:8021"
+
+  app_3:  
+    build: ./app_3
+    ports:
+    - "31337:31337"
+
+  app_4:  
+    build: ./app_4
+    ports:
+    - "31338:9999"
+
+  app_5:  
+    build: ./app_5
+    ports:
+    - "31339:31339"
